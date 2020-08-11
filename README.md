@@ -28,7 +28,7 @@ balena push <YOUR_BALENA_APP> --dockerfile Dockerfile.template --env SLACK_WEBHO
 ```bash
 sed 's/%%BALENA_MACHINE_NAME%%/amd64/' Dockerfile.template > Dockerfile
 docker build -t slanzo .
-docker run -p 3000:3000 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
+docker run -p 3001:3001 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
 ```
 
 ## Testing
