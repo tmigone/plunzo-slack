@@ -39,7 +39,7 @@ Plunzo test webhooks can be triggered with this command:
 ./test/trigger.sh "<SERVER>" "<WEBHOOK>"
 ```
 
-where server is the URL of the deployment (for example: `http://192.168.90.170:3000`) and `WEBHOOK` is one of:
+where server is the URL of the deployment (for example: `http://192.168.90.170:3001`) and `WEBHOOK` is one of:
 - `INCOMING (default)`: "nuevo movimiento ingresante"
 - `OUTGOING`: "nuevo movimiento saliente"
 - `BALANCE`: "balance"
