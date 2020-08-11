@@ -3,7 +3,7 @@ import { Application } from 'express'
 import { IncomingWebhook } from '@slack/webhook'
 
 // Env vars
-const port: string = process.env.PORT ?? '3001'
+const port: string = process.env.PORT ?? '3000'
 const slackWebhookURL: string = process.env.SLACK_WEBHOOK_URL ?? ''
 
 // Init

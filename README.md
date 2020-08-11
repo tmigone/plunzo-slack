@@ -28,7 +28,7 @@ balena push <YOUR_BALENA_APP> --dockerfile Dockerfile.template --env SLACK_WEBHO
 ```bash
 sed 's/%%BALENA_MACHINE_NAME%%/amd64/' Dockerfile.template > Dockerfile
 docker build -t slanzo .
-docker run -p 3001:3001 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
+docker run -p 3000:3000 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
 ```
 
 ## Testing
@@ -39,7 +39,7 @@ Plunzo test webhooks can be triggered with this command:
 ./test/trigger.sh "<SERVER>" "<WEBHOOK>"
 ```
 
-where server is the URL of the deployment (for example: `http://192.168.90.170:3001`) and `WEBHOOK` is one of:
+where server is the URL of the deployment (for example: `http://192.168.90.170:3000`) and `WEBHOOK` is one of:
 - `INCOMING (default)`: "nuevo movimiento ingresante"
 - `OUTGOING`: "nuevo movimiento saliente"
 - `BALANCE`: "balance"
