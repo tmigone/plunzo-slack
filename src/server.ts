@@ -35,6 +35,11 @@ app.post('/balance', async (req, res) => {
   res.send('OK')
 })
 
+app.post('/plunzo', async (req, res) => {
+  console.log(req.body)
+  res.send('OK')
+})
+
 // Start server
 app.listen(port, () => {
   console.log(`--- Slanzo ---`)

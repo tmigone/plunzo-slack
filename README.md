@@ -31,6 +31,10 @@ docker build -t slanzo .
 docker run -p 3000:3000 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
 ```
 
+## Configure Pluns
+
+WIP
+
 ## Testing
 
 Plunzo test webhooks can be triggered with this command:
