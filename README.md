@@ -7,8 +7,7 @@
 You'll need the following:
 - a [Plunzo](https://plunzo.com/) account
 - a [Slack](https://api.slack.com/) developer account
-
----
+- create a [slack app](https://api.slack.com/apps), enable `Incoming Webhooks` functionality and register a webhook for a channel. Copy and save the webhook URL for later (`SLACK_WEBHOOK_URL`)
 
 ## Run using npm
 
@@ -32,9 +31,7 @@ docker build -t slanzo .
 docker run -p 3000:3000 -e SLACK_WEBHOOK_URL='<SLACK_WEBHOOK_URL>' slanzo
 ```
 
----
-
-## Testing
+## Testing
 
 Plunzo test webhooks can be triggered with this command:
 
