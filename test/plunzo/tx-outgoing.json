@@ -1,0 +1,18 @@
+{
+  "webhook_type": 1,
+  "webhook_id": "TRG_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "date": "2020-08-10T20:15:35-03:00",
+  "data": [
+    {
+      "date": "2020-08-10 00:00:00",
+      "institution": "GALICIA",
+      "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-xxxxx",
+      "name": "",
+      "cuit": "",
+      "type": "TRANSFER_OUT",
+      "description": "Ing. brutos s/ cred",
+      "amount": "1875",
+      "coin": "ARS"
+    }
+  ]
+}

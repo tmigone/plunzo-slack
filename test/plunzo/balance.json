@@ -1,0 +1,9 @@
+{
+  "webhook_type": 2,
+  "webhook_id": "TRG_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "date": "2020-08-10T14:16:07-03:00",
+  "data": {
+    "localBalance": 567.89,
+    "foreignBalance": 1234
+  }
+}

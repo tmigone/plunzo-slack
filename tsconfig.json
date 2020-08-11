@@ -1,0 +1,25 @@
+  {
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "build",
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "removeComments": true,
+      "sourceMap": true,
+      "strict": true,
+      "target": "es2015",
+      "declaration": true,
+      "skipLibCheck": true,
+      "allowJs": false,
+      "forceConsistentCasingInFileNames": true,
+      "noErrorTruncation": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitAny": false,
+      "preserveConstEnums": true,
+      "resolveJsonModule": true,
+      "strictNullChecks": true,
+    },
+    "include": [
+      "src/**/*.ts"
+    ]
+  }

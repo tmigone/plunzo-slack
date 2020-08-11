@@ -1,0 +1,38 @@
+{
+  "name": "slanzo",
+  "version": "1.0.0",
+  "description": "Slack integration for Plunzo webhooks",
+  "main": "build/server.js",
+  "scripts": {
+    "start": "node build/server.js",
+    "clean": "rm -rf build",
+    "build": "npm run clean && tsc --project tsconfig.json",
+    "watch": "tsc --watch --project tsconfig.json",
+    "livepush": "nodemon --watch src --ext js,ts,json --exec node --require ts-node/register/transpile-only src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmigone/plunzo-slack.git"
+  },
+  "keywords": [
+    "plunzo",
+    "slack"
+  ],
+  "author": "Tomás Migone <tomasmigone@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmigone/plunzo-slack/issues"
+  },
+  "homepage": "https://github.com/tmigone/plunzo-slack#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.27",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "@slack/webhook": "^5.0.3",
+    "express": "^4.17.1"
+  }
+}
